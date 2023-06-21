@@ -1,115 +1,86 @@
-2023-06-17 17:36:43.793  INFO 14012 --- [main] com.example.demo.SareetaApplication      : Starting SareetaApplication on ANPHATPC with PID 14012 (E:\My_Documents\Courses\Udacity\JavaWebDeveloper\nd035-c4-Security-and-DevOps\starter_code\target\classes started by ADMIN in E:\My_Documents\Courses\Udacity\JavaWebDeveloper\nd035-c4-Security-and-DevOps)
-2023-06-17 17:36:43.795  INFO 14012 --- [main] com.example.demo.SareetaApplication      : No active profile set, falling back to default profiles: default
-2023-06-17 17:36:44.146  INFO 14012 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-06-17 17:36:44.187  INFO 14012 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35ms. Found 4 JPA repository interfaces.
-2023-06-17 17:36:44.739  INFO 14012 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-06-17 17:36:44.747  INFO 14012 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-06-17 17:36:44.747  INFO 14012 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
-2023-06-17 17:36:44.836  INFO 14012 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-06-17 17:36:44.836  INFO 14012 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 995 ms
-2023-06-17 17:36:44.984  INFO 14012 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-06-17 17:36:45.017  INFO 14012 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.18.Final
-2023-06-17 17:36:45.108  INFO 14012 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2023-06-17 17:36:45.172  INFO 14012 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-06-17 17:36:45.285  INFO 14012 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-06-17 17:36:45.296  INFO 14012 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2023-06-17 17:36:45.792  INFO 14012 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-06-17 17:36:45.798  INFO 14012 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-06-17 17:36:46.051  WARN 14012 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-06-17 17:36:46.369  INFO 14012 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3c9971af, org.springframework.security.web.context.SecurityContextPersistenceFilter@76e2a621, org.springframework.security.web.header.HeaderWriterFilter@4c9d833, org.springframework.web.filter.CorsFilter@4abdd5e, org.springframework.security.web.authentication.logout.LogoutFilter@78ea700f, com.example.demo.security.JWTAuthenticationFilter@66d61298, com.example.demo.security.JWTAuthenticationVerficationFilter@7b9fea11, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e7517aa, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@22172b00, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@c7cf8c4, org.springframework.security.web.session.SessionManagementFilter@20f99c18, org.springframework.security.web.access.ExceptionTranslationFilter@5ccc971e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@13809363]
-2023-06-17 17:36:46.407  INFO 14012 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2023-06-17 17:36:46.523  INFO 14012 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-06-17 17:36:46.530  INFO 14012 --- [main] com.example.demo.SareetaApplication      : Started SareetaApplication in 3.02 seconds (JVM running for 3.326)
-2023-06-17 17:36:48.734  INFO 14012 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-06-17 17:36:48.734  INFO 14012 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-06-17 17:36:48.738  INFO 14012 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2023-06-17 17:36:48.930  INFO 14012 --- [http-nio-8080-exec-2] c.e.demo.controllers.UserController      : CreateUser request successes
-2023-06-17 17:37:08.238  WARN 14012 --- [http-nio-8080-exec-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 23505, SQLState: 23505
-2023-06-17 17:37:08.239 ERROR 14012 --- [http-nio-8080-exec-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : Unique index or primary key violation: "PUBLIC.UK_SB8BBOUER5WAK8VYIIY4PF2BX_INDEX_2 ON PUBLIC.USER(USERNAME) VALUES 1"; SQL statement:
-insert into user (id, cart_id, password, username) values (null, ?, ?, ?) [23505-200]
-2023-06-17 17:37:08.242 ERROR 14012 --- [http-nio-8080-exec-3] c.e.d.exception.GlobalExceptionHandler   : An error occur
-2023-06-17 17:37:12.486  INFO 14012 --- [http-nio-8080-exec-5] c.e.demo.controllers.UserController      : CreateUser request failures
-2023-06-17 18:23:46.363  INFO 14012 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2023-06-17 18:23:46.364  INFO 14012 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-06-17 18:23:46.365  INFO 14012 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-06-17 18:23:46.367  INFO 14012 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-06-17 18:23:48.291  INFO 11848 --- [main] com.example.demo.SareetaApplication      : Starting SareetaApplication on ANPHATPC with PID 11848 (E:\My_Documents\Courses\Udacity\JavaWebDeveloper\nd035-c4-Security-and-DevOps\starter_code\target\classes started by ADMIN in E:\My_Documents\Courses\Udacity\JavaWebDeveloper\nd035-c4-Security-and-DevOps)
-2023-06-17 18:23:48.293  INFO 11848 --- [main] com.example.demo.SareetaApplication      : No active profile set, falling back to default profiles: default
-2023-06-17 18:23:48.655  INFO 11848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-06-17 18:23:48.698  INFO 11848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35ms. Found 4 JPA repository interfaces.
-2023-06-17 18:23:49.328  INFO 11848 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-06-17 18:23:49.344  INFO 11848 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-06-17 18:23:49.345  INFO 11848 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
-2023-06-17 18:23:49.440  INFO 11848 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-06-17 18:23:49.441  INFO 11848 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1103 ms
-2023-06-17 18:23:49.643  INFO 11848 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-06-17 18:23:49.674  INFO 11848 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.18.Final
-2023-06-17 18:23:49.768  INFO 11848 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2023-06-17 18:23:49.841  INFO 11848 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-06-17 18:23:49.947  INFO 11848 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-06-17 18:23:49.958  INFO 11848 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2023-06-17 18:23:50.512  INFO 11848 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-06-17 18:23:50.517  INFO 11848 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-06-17 18:23:50.754  WARN 11848 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-06-17 18:23:51.091  INFO 11848 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@39403943, org.springframework.security.web.context.SecurityContextPersistenceFilter@18b58c77, org.springframework.security.web.header.HeaderWriterFilter@7836c79, org.springframework.web.filter.CorsFilter@1c5fd813, org.springframework.security.web.authentication.logout.LogoutFilter@67f266bd, com.example.demo.security.JWTAuthenticationFilter@49338f3, com.example.demo.security.JWTAuthenticationVerficationFilter@3c9971af, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3c20e9d6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@24d0c6a4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4abdd5e, org.springframework.security.web.session.SessionManagementFilter@28269c65, org.springframework.security.web.access.ExceptionTranslationFilter@1f6d7e7c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@184bb873]
-2023-06-17 18:23:51.127  INFO 11848 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2023-06-17 18:23:51.239  INFO 11848 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-06-17 18:23:51.245  INFO 11848 --- [main] com.example.demo.SareetaApplication      : Started SareetaApplication in 3.231 seconds (JVM running for 3.551)
-2023-06-17 18:33:50.823  INFO 11848 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2023-06-17 18:33:50.825  INFO 11848 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-06-17 18:33:50.826  INFO 11848 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-06-17 18:33:50.827  INFO 11848 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-06-17 22:30:26.916  INFO 16160 --- [main] com.example.demo.SareetaApplication      : Starting SareetaApplication on ANPHATPC with PID 16160 (E:\My_Documents\Courses\Udacity\JavaWebDeveloper\nd035-c4-Security-and-DevOps\starter_code\target\classes started by ADMIN in E:\My_Documents\Courses\Udacity\JavaWebDeveloper\nd035-c4-Security-and-DevOps)
-2023-06-17 22:30:26.918  INFO 16160 --- [main] com.example.demo.SareetaApplication      : No active profile set, falling back to default profiles: default
-2023-06-17 22:30:27.294  INFO 16160 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-06-17 22:30:27.338  INFO 16160 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38ms. Found 4 JPA repository interfaces.
-2023-06-17 22:30:27.887  INFO 16160 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-06-17 22:30:27.896  INFO 16160 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-06-17 22:30:27.896  INFO 16160 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
-2023-06-17 22:30:27.983  INFO 16160 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-06-17 22:30:27.983  INFO 16160 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1020 ms
-2023-06-17 22:30:28.139  INFO 16160 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-06-17 22:30:28.183  INFO 16160 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.18.Final
-2023-06-17 22:30:28.292  INFO 16160 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2023-06-17 22:30:28.368  INFO 16160 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-06-17 22:30:28.478  INFO 16160 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-06-17 22:30:28.491  INFO 16160 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2023-06-17 22:30:29.042  INFO 16160 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-06-17 22:30:29.047  INFO 16160 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-06-17 22:30:29.282  WARN 16160 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-06-17 22:30:29.590  INFO 16160 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@723b8eff, org.springframework.security.web.context.SecurityContextPersistenceFilter@4070c4ff, org.springframework.security.web.header.HeaderWriterFilter@5444f1c3, org.springframework.web.filter.CorsFilter@3987a1e8, org.springframework.security.web.authentication.logout.LogoutFilter@61c145cb, com.example.demo.security.JWTAuthenticationFilter@20d65767, com.example.demo.security.JWTAuthenticationVerficationFilter@250e8712, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@389bc2d3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2f58f492, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@becb93a, org.springframework.security.web.session.SessionManagementFilter@1dadd172, org.springframework.security.web.access.ExceptionTranslationFilter@1cfd6f63, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@237aba92]
-2023-06-17 22:30:29.625  INFO 16160 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2023-06-17 22:30:29.736  INFO 16160 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-06-17 22:30:29.743  INFO 16160 --- [main] com.example.demo.SareetaApplication      : Started SareetaApplication in 3.112 seconds (JVM running for 3.43)
-2023-06-17 22:30:58.392  INFO 16160 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-06-17 22:30:58.393  INFO 16160 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-06-17 22:30:58.396  INFO 16160 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2023-06-17 22:30:58.567  INFO 16160 --- [http-nio-8080-exec-1] c.e.demo.controllers.UserController      : CreateUser request successes
-2023-06-17 22:31:03.524  INFO 16160 --- [http-nio-8080-exec-3] c.e.demo.controllers.UserController      : CreateUser request successes
-2023-06-17 22:31:06.978  INFO 16160 --- [http-nio-8080-exec-4] c.e.demo.controllers.UserController      : CreateUser request successes
-2023-06-17 22:31:21.117  INFO 16160 --- [http-nio-8080-exec-5] c.e.demo.controllers.UserController      : CreateUser request successes
-2023-06-17 22:32:25.355  INFO 16160 --- [http-nio-8080-exec-6] c.e.demo.controllers.UserController      : CreateUser request failures
-2023-06-17 22:33:26.995  INFO 16160 --- [http-nio-8080-exec-8] c.e.demo.controllers.UserController      : CreateUser request failures
-2023-06-17 22:34:31.163  WARN 16160 --- [http-nio-8080-exec-10] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 23505, SQLState: 23505
-2023-06-17 22:35:31.163 ERROR 16160 --- [http-nio-8080-exec-10] o.h.engine.jdbc.spi.SqlExceptionHelper   : Unique index or primary key violation: "PUBLIC.UK_SB8BBOUER5WAK8VYIIY4PF2BX_INDEX_2 ON PUBLIC.USER(USERNAME) VALUES 4"; SQL statement:
-insert into user (id, cart_id, password, username) values (null, ?, ?, ?) [23505-200]
-2023-06-17 22:35:31.167 ERROR 16160 --- [http-nio-8080-exec-10] c.e.d.exception.GlobalExceptionHandler   : An error occur
-2023-06-17 22:35:32.454  WARN 16160 --- [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 23505, SQLState: 23505
-2023-06-17 22:35:32.454 ERROR 16160 --- [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Unique index or primary key violation: "PUBLIC.UK_SB8BBOUER5WAK8VYIIY4PF2BX_INDEX_2 ON PUBLIC.USER(USERNAME) VALUES 4"; SQL statement:
-insert into user (id, cart_id, password, username) values (null, ?, ?, ?) [23505-200]
-2023-06-17 22:35:32.454 ERROR 16160 --- [http-nio-8080-exec-1] c.e.d.exception.GlobalExceptionHandler   : An error occur
-2023-06-17 22:35:37.187  INFO 16160 --- [http-nio-8080-exec-4] c.e.demo.controllers.UserController      : CreateUser request successes
-2023-06-17 22:35:40.983  INFO 16160 --- [http-nio-8080-exec-5] c.e.demo.controllers.UserController      : CreateUser request successes
-2023-06-17 22:36:44.374  INFO 16160 --- [http-nio-8080-exec-8] c.e.demo.controllers.UserController      : CreateUser request successes
-2023-06-17 22:36:47.520  INFO 16160 --- [http-nio-8080-exec-9] c.e.demo.controllers.UserController      : CreateUser request successes
-2023-06-17 22:36:50.400  INFO 16160 --- [http-nio-8080-exec-10] c.e.demo.controllers.UserController      : CreateUser request failures
-2023-06-17 22:36:57.329  INFO 16160 --- [http-nio-8080-exec-1] c.e.demo.controllers.UserController      : CreateUser request failures
-2023-06-17 22:37:03.532  INFO 16160 --- [http-nio-8080-exec-4] c.e.demo.controllers.UserController      : CreateUser request successes
-2023-06-17 22:37:04.152  WARN 16160 --- [http-nio-8080-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 23505, SQLState: 23505
-2023-06-17 22:37:04.152 ERROR 16160 --- [http-nio-8080-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : Unique index or primary key violation: "PUBLIC.UK_SB8BBOUER5WAK8VYIIY4PF2BX_INDEX_2 ON PUBLIC.USER(USERNAME) VALUES 11"; SQL statement:
-insert into user (id, cart_id, password, username) values (null, ?, ?, ?) [23505-200]
-2023-06-17 22:37:04.153 ERROR 16160 --- [http-nio-8080-exec-5] c.e.d.exception.GlobalExceptionHandler   : An error occur
-2023-06-17 23:50:10.136  INFO 16160 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2023-06-17 23:50:10.137  INFO 16160 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-06-17 23:50:10.139  INFO 16160 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-06-17 23:50:10.140  INFO 16160 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-21 22:50:11.114  INFO 1696 --- [main] com.example.demo.SareetaApplication      : Starting SareetaApplication on ANPHATPC with PID 1696 (E:\My_Documents\Courses\Udacity\JavaWebDeveloper\nd035-c4-Security-and-DevOps\starter_code\target\classes started by ADMIN in E:\My_Documents\Courses\Udacity\JavaWebDeveloper\nd035-c4-Security-and-DevOps)
+2023-06-21 22:50:11.120  INFO 1696 --- [main] com.example.demo.SareetaApplication      : No active profile set, falling back to default profiles: default
+2023-06-21 22:50:11.575  INFO 1696 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-21 22:50:11.635  INFO 1696 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50ms. Found 4 JPA repository interfaces.
+2023-06-21 22:50:12.405  INFO 1696 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-21 22:50:12.416  INFO 1696 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-21 22:50:12.416  INFO 1696 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2023-06-21 22:50:12.525  INFO 1696 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-21 22:50:12.525  INFO 1696 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1347 ms
+2023-06-21 22:50:12.755  INFO 1696 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-21 22:50:12.809  INFO 1696 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.18.Final
+2023-06-21 22:50:12.936  INFO 1696 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-06-21 22:50:13.032  INFO 1696 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-21 22:50:13.186  INFO 1696 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-21 22:50:13.200  INFO 1696 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-06-21 22:50:13.767  INFO 1696 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-21 22:50:13.772  INFO 1696 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-21 22:50:14.021  WARN 1696 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-21 22:50:14.351  INFO 1696 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@696ce057, org.springframework.security.web.context.SecurityContextPersistenceFilter@470b5213, org.springframework.security.web.header.HeaderWriterFilter@3f2ef402, org.springframework.web.filter.CorsFilter@5eba9e41, org.springframework.security.web.authentication.logout.LogoutFilter@5ae16aa, com.example.demo.security.JWTAuthenticationFilter@13809363, com.example.demo.security.JWTAuthenticationVerficationFilter@564d3940, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@64887fbc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@18b58c77, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@58ad0586, org.springframework.security.web.session.SessionManagementFilter@391e5ffa, org.springframework.security.web.access.ExceptionTranslationFilter@733bd6f3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3d3a28b5]
+2023-06-21 22:50:14.386  INFO 1696 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-21 22:50:14.491  WARN 1696 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2023-06-21 22:50:14.492  INFO 1696 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-21 22:50:14.493  INFO 1696 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-21 22:50:14.494  INFO 1696 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-21 22:50:14.496  INFO 1696 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-21 22:50:14.497  INFO 1696 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-06-21 22:50:14.503  INFO 1696 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-21 22:50:14.504 ERROR 1696 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2023-06-21 22:50:24.689  INFO 5668 --- [main] com.example.demo.SareetaApplication      : Starting SareetaApplication on ANPHATPC with PID 5668 (E:\My_Documents\Courses\Udacity\JavaWebDeveloper\nd035-c4-Security-and-DevOps\starter_code\target\classes started by ADMIN in E:\My_Documents\Courses\Udacity\JavaWebDeveloper\nd035-c4-Security-and-DevOps)
+2023-06-21 22:50:24.691  INFO 5668 --- [main] com.example.demo.SareetaApplication      : No active profile set, falling back to default profiles: default
+2023-06-21 22:50:25.109  INFO 5668 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-21 22:50:25.176  INFO 5668 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59ms. Found 4 JPA repository interfaces.
+2023-06-21 22:50:25.705  INFO 5668 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-21 22:50:25.713  INFO 5668 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-21 22:50:25.714  INFO 5668 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2023-06-21 22:50:25.793  INFO 5668 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-21 22:50:25.793  INFO 5668 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1049 ms
+2023-06-21 22:50:25.944  INFO 5668 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-21 22:50:25.985  INFO 5668 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.18.Final
+2023-06-21 22:50:26.083  INFO 5668 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-06-21 22:50:26.159  INFO 5668 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-21 22:50:26.269  INFO 5668 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-21 22:50:26.280  INFO 5668 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-06-21 22:50:26.796  INFO 5668 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-21 22:50:26.803  INFO 5668 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-21 22:50:27.110  WARN 5668 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-21 22:50:27.544  INFO 5668 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@564d3940, org.springframework.security.web.context.SecurityContextPersistenceFilter@26b3fe8, org.springframework.security.web.header.HeaderWriterFilter@f4d391c, org.springframework.web.filter.CorsFilter@58ad0586, org.springframework.security.web.authentication.logout.LogoutFilter@1870b9b8, com.example.demo.security.JWTAuthenticationFilter@526fc044, com.example.demo.security.JWTAuthenticationVerficationFilter@45635ae1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@20518250, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@76e2a621, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7adbec34, org.springframework.security.web.session.SessionManagementFilter@2fa2143d, org.springframework.security.web.access.ExceptionTranslationFilter@14bf9fd0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@306bf4c3]
+2023-06-21 22:50:27.591  INFO 5668 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-21 22:50:27.720  WARN 5668 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2023-06-21 22:50:27.721  INFO 5668 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-21 22:50:27.722  INFO 5668 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-21 22:50:27.724  INFO 5668 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-21 22:50:27.726  INFO 5668 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-21 22:50:27.728  INFO 5668 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-06-21 22:50:27.739  INFO 5668 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-21 22:50:27.741 ERROR 5668 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
